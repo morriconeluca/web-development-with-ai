@@ -27,9 +27,7 @@ _Repository: [github.com/morriconeluca/web-development-with-ai](https://github.c
 
 ---
 
-La prima giornata è organizzata in tre moduli orari e un compito finale. Di seguito trovi le lezioni e le slide di supporto:
-
-- 🖥️ **[Slide per la Lezione (Presentazione)](slides/README.md)**: Slide in formato Markdown navigabili per presentare gli argomenti in classe.
+La prima giornata è organizzata in tre moduli orari e un compito finale.
 
 ### 🧠 [Ora 1: Dal Neurone Biologico alle Reti Neurali (Teoria & Filosofia)](01-neurone-biologico-reti-neurali.md)
 
