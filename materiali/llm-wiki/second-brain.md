@@ -14,7 +14,36 @@ Alla fine del prompt bisogna linkare il file [llm-wiki.md](https://gist.github.c
 L'argomento della wiki sarà "Il Nuovo Ciclo di Vita dello Sviluppo del Software (SDLC) guidata dall'Intelligenza Artificiale". Si tratta di una ricerca scientifica su questo argomento. Userò come fonti: articoli web clippati, paper scientifici in PDF, trascrizioni di video, appunti personali. Non conosco ancora quali saranno le categorie, entità o concetti che vorrò tracciare.
 ```
 
-## Risorse online
+## Caricare il primo file raw
 
 - [The New SDLC with Vibe Coding](https://www.kaggle.com/whitepaper-the-new-SDLC-with-vibe-coding)
-- [AI Agent Skills](https://github.com/agentskills/agentskills)
+
+## Fare il primo ingest
+
+```text
+Esegui l'ingest del primo file che ho aggiunto nella raw
+```
+
+## Prima query
+
+```text
+Fai una query: qual'è il nuovo ciclo di vita dello sviluppo del software guidato dall'Intelligenza Artificiale?
+```
+
+## Istruzioni aggiuntive
+
+```text
+Aggiungi nella raw i file markdown che descrivono la specifica delle SKILLS in https://github.com/agentskills/agentskills/tree/main
+```
+
+## Ingestare i file
+
+```text
+Procedi con l'ingest delle nuove fonti
+```
+
+## Aggiungere la skill /teach di Matt Pocock
+
+```text
+/teach Fai una query e insegnami a scrivere una skill
+```
