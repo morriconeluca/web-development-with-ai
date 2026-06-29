@@ -8,7 +8,7 @@ In questa seconda ora approfondiremo come dialogare con i modelli di linguaggio 
 
 ---
 
-## 🔌 1. Tecniche di Prompt Engineering (Esempi Pratici NON-Web Dev)
+## 🔌 1. Tecniche di Prompt Engineering
 
 Il Prompt Engineering è l'arte e la scienza di strutturare gli input per ottenere risposte ottimali e prevedibili da un LLM. Di seguito analizziamo le 4 tecniche principali con esempi pratici non legati allo sviluppo software.
 

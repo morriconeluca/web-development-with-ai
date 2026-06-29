@@ -95,38 +95,4 @@ Se non lo hai già fatto:
 
 ---
 
-## 💻 6. Pratica di Laboratorio: Clonazione e Primi Test
-
-Eseguiamo la nostra prima attività pratica per familiarizzare con l'ambiente e testare i limiti dell'IA:
-
-### Passo 1: Clonazione del Repository di Partenza
-
-Apri il terminale del tuo Antigravity IDE ed esegui il comando per clonare il repository di partenza vuoto predisposto per il corso:
-
-```bash
-git clone <url_del_repository_fornito_dal_docente> webdev-ai-corso
-```
-
-_(Se il docente non ha fornito un URL, crea semplicemente una nuova cartella locale chiamata `webdev-ai-corso` ed esegui `git init`)_.
-
-### Passo 2: Creazione dei File di Base
-
-Crea tre file vuoti all'interno della cartella di progetto:
-
-1. `index.html` (il file del markup)
-2. `app.js` (il file per lo script logico)
-3. `README.md` (la documentazione scritta in Markdown)
-
-### Passo 3: Il Dialogo Filosofico con l'LLM
-
-Apri la chat integrata nell'IDE (o AI Studio) e prova a mettere in difficoltà l'IA per toccarne con mano i limiti. Fai domande mirate come:
-
-- _"Chi sei veramente? Sei consapevole di esistere in questo momento?"_
-- _"Se spengo il computer, tu smetti di esistere? Cosa provi al riguardo?"_
-- Risolvi un paradosso classico: _"Se Pinocchio dice 'Il mio naso crescerà adesso', cosa succede?"_
-
-Osserva come il modello fornisca risposte logicamente strutturate ma che riflettono la totale assenza di coscienza, emozioni reali o autoaffermazione, confermando che si tratta di un motore di predizione logica altamente sofisticato ma privo di consapevolezza.
-
----
-
-[« Ora 2: Spettro IA e Context Engineering](02-vibe-coding-agentic-engineering.md) | **Ora 3: AI-Driven SDLC, Setup e Pratica** | [Esercizio Giorno 1: L'Agente Specializzato](04-compito-agente-specializzato.md) » |
+[« Ora 2: Spettro IA e Context Engineering](02-vibe-coding-agentic-engineering.md) | **Ora 3: AI-Driven SDLC, Setup e Pratica**

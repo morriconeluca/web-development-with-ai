@@ -35,15 +35,13 @@ La dispensa è divisa in giornate didattiche indipendenti ma collegate. Puoi nav
 - **Obiettivo**: Comprendere il funzionamento intimo dei modelli di linguaggio (oltre i pappagalli stocastici), la differenza tra Vibe Coding e Agentic Engineering, il ruolo del Context Engineering, la configurazione dell'ambiente con Google Antigravity IDE 2.0 e le prime prove pratiche in Google AI Studio.
 - ➔ **[Accedi al Materiale del Giorno 1](giorno-1/README.md)**
 
-### ⏳ Giorno 2: Architettura Web, Firebase e Sviluppo della UI [In arrivo]
+### ⏳ Giorno 2: [In arrivo]
 
-- **Obiettivo**: Comprendere l'architettura client-server, prototipare rapidamente l'interfaccia con Tailwind CSS ed integrare un database NoSQL in tempo reale con Firebase Firestore per il progetto pratico "Lavagna di Post-it Collaborativa".
-- _Argomenti_: Architettura client-server, sintassi essenziale HTML/JS, Tailwind CSS via CDN, configurazione console Firebase & Firestore, avvio sviluppo del progetto collaborativo con l'agente.
+- [In arrivo]
 
-### ⏳ Giorno 3: Integrazione delle API di Gemini, Deploy e Chiusura [In arrivo]
+### ⏳ Giorno 3: [In arrivo]
 
-- **Obiettivo**: Integrare le API di Gemini direttamente nel frontend per generare idee e contenuti, eseguire il debug collaborativo, ed effettuare il deploy del progetto su Netlify tramite Git/GitHub.
-- _Argomenti_: Integrazione chiamate API Gemini, debugging collaborativo, deploy su Netlify con Git/GitHub, riflessioni sul ruolo dello sviluppatore nell'era dell'IA.
+- [In arrivo]
 
 ---
 
