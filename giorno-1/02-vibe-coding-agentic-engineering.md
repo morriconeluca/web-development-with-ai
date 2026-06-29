@@ -194,11 +194,9 @@ Ora metteremo in pratica i concetti di Prompting e Intent Specification usando *
 
 Utilizza i prompt seguenti all'interno della chat di AI Studio per vedere come Gemini traduce istantaneamente il tuo intento in codice HTML/CSS/JS funzionante in una sola sessione:
 
-#### 1. Fiocchi di Neve e Palloncini (Traduzione Prompt)
+#### 1. Fiocchi di Neve e Palloncini
 
-> "Crea un'applicazione frontend dall'aspetto formale e pulito con due pulsanti centrati sullo schermo: 'Fiocchi di neve' e 'Palloncini'.
-> Se l'utente fa clic sul pulsante 'Fiocchi di neve', dei fiocchi di neve di medie dimensioni (es. caratteri emoji ❄️) devono iniziare a cadere dall'alto dello schermo verso il basso, scomparendo dopo 5 secondi.
-> Se l'utente fa clic sul pulsante 'Palloncini', dei palloncini di medie dimensioni (es. caratteri emoji 🎈) devono iniziare a salire dal fondo dello schermo verso l'alto, scomparendo dopo 5 secondi. L'applicazione deve essere contenuta in un singolo file HTML con stili CSS incorporati e script JS."
+> "Crea un'applicazione frontend dall'aspetto formale che ha due pulsanti: "Snowflakes" e "Balloons". Se l'utente fa clic sul pulsante "Snowflakes", fiocchi di neve di medie dimensioni dovrebbero iniziare a cadere sullo schermo dall'alto verso il basso per 5 secondi. Se l'utente fa clic sul pulsante "Balloons", palloncini di medie dimensioni dovrebbero iniziare a fluttuare dal fondo dello schermo verso l'alto per 5 secondi."
 
 #### 2. Pomodoro Timer
 
