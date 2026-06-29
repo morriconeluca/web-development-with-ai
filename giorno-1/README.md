@@ -6,12 +6,6 @@
 
 Benvenuto nella prima giornata del corso! L'obiettivo di oggi è gettare basi solide sul funzionamento concettuale, filosofico e pratico dei modelli di linguaggio (LLM) e degli agenti autonomi, allestire la tua postazione di lavoro con strumenti all'avanguardia ed effettuare le tue prime esercitazioni pratiche di prototipazione.
 
-Scansiona il QR Code per accedere al repository ufficiale del materiale didattico:
-
-![QR Code al materiale didattico](https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://github.com/morriconeluca/web-development-with-ai)
-
-_Repository: [github.com/morriconeluca/web-development-with-ai](https://github.com/morriconeluca/web-development-with-ai)_
-
 ## 🎯 Obiettivi della Giornata
 
 - **Basi Teoriche e Filosofiche**:
