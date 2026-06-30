@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Profilo Interattiva</title>
+    <!-- Script Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-slate-100 flex items-center justify-center min-h-screen">
+    <main
+      class="bg-white p-8 rounded-2xl shadow-xl max-w-sm w-full text-center border border-slate-200"
+    >
+      <!-- Immagine Profilo -->
+      <div
+        class="w-24 h-24 bg-gradient-to-tr from-sky-400 to-indigo-500 rounded-full mx-auto flex items-center justify-center text-white text-3xl font-bold shadow-inner"
+      >
+        LM
+      </div>
+
+      <!-- Info Utente -->
+      <h1 class="text-2xl font-bold text-slate-800 mt-4">Luca Morricone</h1>
+      <p
+        class="text-sm font-semibold text-indigo-600 uppercase tracking-wider mt-1"
+      >
+        Docente Web Dev
+      </p>
+      <p class="text-slate-500 mt-3 text-sm leading-relaxed">
+        Appassionato di programmazione web, intelligenza artificiale generativa
+        e architetture cloud real-time.
+      </p>
+
+      <!-- Statistiche -->
+      <div
+        class="flex justify-around my-6 py-4 bg-slate-50 rounded-xl border border-slate-100"
+      >
+        <div>
+          <span class="block text-lg font-bold text-slate-700">12</span>
+          <span class="text-xs text-slate-400 uppercase font-semibold"
+            >Progetti</span
+          >
+        </div>
+        <div>
+          <span class="block text-lg font-bold text-slate-700">1.4k</span>
+          <span class="text-xs text-slate-400 uppercase font-semibold"
+            >Studenti</span
+          >
+        </div>
+      </div>
+
+      <!-- Pulsante Interattivo -->
+      <button
+        id="follow-btn"
+        class="w-full bg-indigo-600 hover:bg-indigo-700 active:bg-indigo-800 text-white font-semibold py-3 px-6 rounded-xl transition duration-200 shadow-md shadow-indigo-100"
+      >
+        Segui
+      </button>
+    </main>
+
+    <script>
+      // Codice Javascript per l'interazione
+      const followBtn = document.querySelector('#follow-btn');
+      let isFollowing = false;
+
+      followBtn.addEventListener('click', () => {
+        isFollowing = !isFollowing;
+
+        if (isFollowing) {
+          followBtn.textContent = 'Seguito ✔️';
+          followBtn.classList.replace('bg-indigo-600', 'bg-emerald-600');
+          followBtn.classList.replace(
+            'hover:bg-indigo-700',
+            'hover:bg-emerald-700',
+          );
+        } else {
+          followBtn.textContent = 'Segui';
+          followBtn.classList.replace('bg-emerald-600', 'bg-indigo-600');
+          followBtn.classList.replace(
+            'hover:bg-emerald-700',
+            'hover:bg-indigo-700',
+          );
+        }
+      });
+    </script>
+  </body>
+</html>

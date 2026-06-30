@@ -39,9 +39,10 @@ La dispensa è divisa in giornate didattiche indipendenti ma collegate. Puoi nav
 
 - [In arrivo]
 
-### ⏳ Giorno 3: [In arrivo]
+### 🌟 [Giorno 3: Architettura Web, Firebase e Sviluppo della UI](giorno-3/README.md)
 
-- [In arrivo]
+- **Obiettivo**: Comprendere l'architettura client-server, prototipare rapidamente l'interfaccia con Tailwind CSS ed integrare un database NoSQL in tempo reale con Firebase Firestore per il progetto pratico "Lavagna di Post-it Collaborativa".
+- ➔ **[Accedi al Materiale del Giorno 3](giorno-3/README.md)**
 
 ---
 

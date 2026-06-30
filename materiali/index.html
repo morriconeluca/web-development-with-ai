@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lavagna Post-it Collaborativa</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="bg-slate-900 text-white h-screen w-screen overflow-hidden flex flex-col font-sans select-none"
+  >
+    <!-- Header della Lavagna -->
+    <header
+      class="bg-slate-800/80 backdrop-blur border-b border-slate-700 p-4 flex justify-between items-center z-10"
+    >
+      <div>
+        <h1
+          class="text-xl font-bold tracking-tight text-white flex items-center gap-2"
+        >
+          📌 Lavagna Collaborativa Real-Time
+        </h1>
+        <p class="text-xs text-slate-400">
+          Trascina i post-it. Le modifiche si sincronizzano all'istante su tutti
+          gli schermi.
+        </p>
+      </div>
+      <button
+        id="add-btn"
+        class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-5 rounded-lg shadow-lg hover:shadow-indigo-500/20 active:scale-95 transition"
+      >
+        + Aggiungi Post-it
+      </button>
+    </header>
+
+    <!-- Area di lavoro (Canvas) -->
+    <main
+      id="canvas"
+      class="relative flex-1 w-full h-full bg-[radial-gradient(#334155_1px,transparent_1px)] [background-size:20px_20px] bg-slate-900"
+    >
+      <!-- I post-it verranno iniettati qui dinamicamente -->
+    </main>
+
+    <!-- Script Firebase & Logica Applicativa -->
+    <script type="module">
+      import { initializeApp } from 'https://www.gstatic.com/firebasejs/12.15.0/firebase-app.js';
+      import {
+        getFirestore,
+        collection,
+        addDoc,
+        onSnapshot,
+        updateDoc,
+        doc,
+      } from 'https://www.gstatic.com/firebasejs/12.15.0/firebase-firestore.js';
+
+      // ⚠️ SOSTITUISCI CON LE TUE CREDENZIALI FIREBASE
+      const firebaseConfig = {
+        apiKey: 'LA_TUA_API_KEY',
+        authDomain: 'IL_TUO_AUTH_DOMAIN',
+        projectId: 'IL_TUO_PROJECT_ID',
+        storageBucket: 'IL_TUO_STORAGE_BUCKET',
+        messagingSenderId: 'IL_TUO_MESSAGING_SENDER_ID',
+        appId: 'IL_TUO_APP_ID',
+      };
+
+      // Inizializza Firebase e Firestore
+      const app = initializeApp(firebaseConfig);
+      const db = getFirestore(app);
+      const postitCol = collection(db, 'postit');
+
+      const canvas = document.getElementById('canvas');
+      const addBtn = document.getElementById('add-btn');
+
+      // --- 1. AGGIUNGI UN NUOVO POST-IT ---
+      addBtn.addEventListener('click', async () => {
+        const testo = prompt('Cosa vuoi scrivere sul post-it?');
+        if (!testo) return;
+
+        // Crea un documento su Firestore posizionato al centro dello schermo
+        try {
+          await addDoc(postitCol, {
+            testo: testo,
+            x: 100 + Math.random() * 200, // Posizione iniziale casuale
+            y: 100 + Math.random() * 200,
+            colore: 'bg-yellow-200', // Colore di default
+          });
+        } catch (e) {
+          console.error('Errore durante il salvataggio:', e);
+        }
+      });
+
+      // --- 2. ASCOLTA E RENDERING IN TEMPO REALE ---
+      onSnapshot(postitCol, (snapshot) => {
+        // Pulisce l'area di lavoro prima di ridisegnare per evitare duplicati
+        canvas.innerHTML = '';
+
+        snapshot.forEach((documento) => {
+          const id = documento.id;
+          const dati = documento.data();
+
+          // Creazione HTML del post-it
+          const postit = document.createElement('article');
+          postit.id = id;
+          postit.className = `absolute ${dati.colore} text-slate-800 p-4 w-48 h-48 rounded-xl shadow-lg border border-yellow-300/20 cursor-grab active:cursor-grabbing flex flex-col justify-between transition-shadow hover:shadow-2xl`;
+          postit.style.left = `${dati.x}px`;
+          postit.style.top = `${dati.y}px`;
+
+          postit.innerHTML = `
+          <p class="text-sm font-medium overflow-y-auto max-h-32 select-none">${dati.testo}</p>
+          <span class="text-[9px] text-slate-500 font-mono self-end">ID: ${id.substring(0, 5)}</span>
+        `;
+
+          // Abilita la logica di drag-and-drop sul post-it creato
+          attivaDragDrop(postit);
+          canvas.appendChild(postit);
+        });
+      });
+
+      // --- 3. LOGICA DI DRAG & DROP VANILLA JS ---
+      function attivaDragDrop(element) {
+        let active = false;
+        let currentX;
+        let currentY;
+        let initialX;
+        let initialY;
+        let xOffset = 0;
+        let yOffset = 0;
+
+        element.addEventListener('mousedown', dragStart);
+
+        function dragStart(e) {
+          // Impedisce la selezione indesiderata del testo circostante
+          e.preventDefault();
+
+          initialX = e.clientX - parseFloat(element.style.left || 0);
+          initialY = e.clientY - parseFloat(element.style.top || 0);
+
+          if (e.target === element || element.contains(e.target)) {
+            active = true;
+            document.addEventListener('mousemove', drag);
+            document.addEventListener('mouseup', dragEnd);
+          }
+        }
+
+        function drag(e) {
+          if (!active) return;
+
+          currentX = e.clientX - initialX;
+          currentY = e.clientY - initialY;
+
+          // Limita il trascinamento all'interno dell'area visibile dello schermo
+          if (currentX < 0) currentX = 0;
+          if (currentY < 0) currentY = 0;
+
+          element.style.left = `${currentX}px`;
+          element.style.top = `${currentY}px`;
+        }
+
+        async function dragEnd() {
+          if (!active) return;
+
+          active = false;
+          document.removeEventListener('mousemove', drag);
+          document.removeEventListener('mouseup', dragEnd);
+
+          // Aggiorna le nuove coordinate su Firestore
+          const docRef = doc(db, 'postit', element.id);
+          try {
+            await updateDoc(docRef, {
+              x: currentX,
+              y: currentY,
+            });
+          } catch (e) {
+            console.error("Errore nell'aggiornamento della posizione:", e);
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
