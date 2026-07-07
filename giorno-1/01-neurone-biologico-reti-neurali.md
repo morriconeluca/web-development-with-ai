@@ -72,6 +72,17 @@ Ogni collegamento tra due neuroni è caratterizzato da un valore numerico chiama
 - **Il peso definisce l'importanza del collegamento**: Funziona come un "potenziometro" o moltiplicatore. Se un peso è vicino a zero, il segnale passante viene ignorato. Se il peso è molto alto, quel collegamento ha un'influenza determinante sul comportamento del neurone successivo.
 - Addestrare una rete neurale significa **trovare la configurazione ideale di tutti i suoi pesi** attraverso milioni di tentativi, affinché gli input producano sempre l'output corretto. I modelli GPT-4 o Gemini possiedono centinaia di miliardi di pesi individuali.
 
+#### 🎥 Video di Approfondimento: Come Imparano le Reti Neurali
+
+Durante la spiegazione proietteremo questo video didattico che illustra l'apprendimento e le sfide etiche delle reti neurali:
+
+- **Video**: [Dentro l'IA - 1. Come imparano le reti neurali? - Eleonora Misino](https://www.youtube.com/watch?v=MJlrabo6ARk) (Zanichelli)
+- **Temi chiave**:
+  - **Conversione dei Dati**: La scomposizione delle immagini in dati numerici (griglie di pixel con valori di intensità) per essere comprese dalla rete (es. il riconoscimento di un numero manoscritto).
+  - **Retropropagazione dell'Errore (Backpropagation)**: Il ciclo continuo di previsione, calcolo dello scarto (errore) rispetto alla risposta esatta e aggiustamento progressivo dei pesi sinaptici.
+  - **Problema della Scatola Nera (Black Box)**: La complessità intrinseca delle reti multi-strato, che rende difficile spiegare esattamente quale percorso matematico porti a una determinata decisione.
+  - **I Bias nei Dati**: Il rischio etico che il modello assorba e amplifichi i pregiudizi sociali o storici presenti nei dati di addestramento, applicandoli poi in decisioni sensibili (es. medicina, assunzioni).
+
 ---
 
 ### 🔤 Large Language Models (LLM) e i Token
@@ -93,15 +104,18 @@ I computer non leggono le parole intere. Prima di inviare il testo al modello, q
 - Seleziona il token successivo più probabile (o uno dei più probabili in base a parametri come la _Temperatura_) ed emette la parola.
 - Aggiunge il token appena generato all'input e ripete il ciclo da capo, parola dopo parola, fino a terminare il discorso.
 
-#### 🎥 Video di Approfondimento: Come funzionano gli LLM
+#### 🎥 Video di Approfondimento: NLP e Generazione di Testo
 
-Durante la spiegazione proietteremo questo video didattico che illustra il funzionamento visivo dei Large Language Models:
+Proietteremo e commenteremo questi due video didattici per comprendere l'elaborazione del linguaggio naturale ed il funzionamento degli LLM:
 
-- **Video**: [Dentro l'IA - Come funzionano i grandi modelli linguistici (LLM)? - Federico Ruggeri](https://www.youtube.com/watch?v=BkRKu3mn-o4) (Zanichelli)
-- **Temi chiave**: Il meccanismo probabilistico della predizione del token successivo, l'addestramento tramite _slot filling_ (completamento di parole mancanti), la necessità di miliardi di parametri e la differenza tra calcolo probabilistico e ragionamento conscio.
-- **Video Consigliati**:
-  - [Come imparano le reti neurali](https://www.youtube.com/watch?v=MJlrabo6ARk)
-  - [Come funziona l'elaborazione del linguaggio naturale (NLP)](https://www.youtube.com/watch?v=hFyi2sSsm4E)
+1. **Video**: [Dentro l'IA - 2. Come funziona l'elaborazione del linguaggio naturale (NLP)? - Andrea Galassi](https://www.youtube.com/watch?v=hFyi2sSsm4E) (Zanichelli)
+   - **Temi chiave**:
+     - **Spazio Semantico**: La codifica e conversione delle parole in rappresentazioni numeriche (vettori di embedding) all'interno di uno spazio geometrico multidimensionale in base al loro significato.
+     - **Apprendimento linguistico**: Come la rete neurale analizza enormi testi per imparare a codificare e decodificare le strutture del linguaggio naturale.
+     - **Limite di interpretabilità**: L'astrazione matematica di queste rappresentazioni numeriche, che le rende complesse e non direttamente traducibili in concetti comprensibili dall'uomo.
+
+2. **Video**: [Dentro l'IA - 3. Come funzionano i grandi modelli linguistici (LLM)? - Federico Ruggeri](https://www.youtube.com/watch?v=BkRKu3mn-o4) (Zanichelli)
+   - **Temi chiave**: Il meccanismo probabilistico della predizione del token successivo, l'addestramento tramite _slot filling_ (completamento di parole mancanti), la necessità di miliardi di parametri e la differenza tra calcolo probabilistico e ragionamento conscio.
 
 ---
 
@@ -123,6 +137,18 @@ Il modello non "tira a indovinare" la parola successiva basandosi solo sulle tre
 Pensa a come parliamo noi esseri umani. Quando rispondi a una domanda, raramente pianifichi in anticipo ogni singola parola che dirai. Spesso inizi a parlare avendo in mente solo un'**idea concettuale semantica, quasi inconscia**, del discorso che vuoi costruire. Il tuo cervello traduce dinamicamente quell'intento concettuale in singole parole via via che parli.
 
 Allo stesso modo, i modelli di linguaggio, attraverso i loro strati di attenzione (Transformer Attention Blocks), costruiscono uno stato logico interno che guida la generazione del testo lungo una traiettoria coerente, imitando concettualmente questa direzionalità del pensiero umano.
+
+### 🎥 Approfondimento: La Visione di Nello Cristianini (AI e Comprensione)
+
+Per approfondire il dibattito sulla natura del ragionamento delle macchine, facciamo riferimento a due interviste chiave rilasciate dal Prof. Nello Cristianini (Professore di Intelligenza Artificiale ed autore di _La scorciatoia_, _Machina Sapiens_ e _Forma Mentis_):
+
+1. **Video**: [L’AI può ragionare e comprendere? — Con Nello Cristianini](https://www.youtube.com/watch?v=bmshs8rl7As&t=86s) (Raffaele Gaito)
+   - **Concetto di "Scorciatoia"**: I modelli di linguaggio non replicano il meccanismo biologico del pensiero umano, ma utilizzano una scorciatoia statistica su scala monumentale. Questa scorciatoia consente loro di emulare in modo estremamente preciso compiti di ragionamento e di comprensione complessi.
+   - **Vitalismo vs Meccanicismo**: Cristianini fa un parallelismo storico: così come la biologia ha superato l'ipotesi "vitalista" scoprendo che la cellula biologica segue le stesse leggi fisiche della materia inanimata senza bisogno di un soffio magico, oggi la scienza dell'IA dimostra che comportamenti cognitivi ed emergenti possono nascere da semplici operazioni logico-statistiche iterate.
+
+2. **Video**: [What really happens inside an AI model? — Con Nello Cristianini (Parte 2)](https://www.youtube.com/watch?v=IxsV2lFLVUw&t=1014s) (Raffaele Gaito)
+   - **Superamento della "Statistica Banale"**: I modelli moderni non sono meri ripetitori casuali di frasi (pappagalli stocastici). All'interno dei loro strati, i modelli (come dimostrato dalle ricerche di Anthropic sulla rappresentazione concettuale di Claude) estraggono e mappano concetti astratti in modo coerente e strutturato.
+   - **Il "Giusto Livello" di Analisi**: Cristianini suggerisce che descrivere un modello di IA parlando solo di pesi e calcoli matriciali è come descrivere un cane parlando solo dei suoi atomi. Per comprendere e governare le macchine, dobbiamo salire di livello e analizzarle come agenti cognitivi integrati, studiando le loro "mappe mentali" e la psicologia del comportamento artificiale (interpretability).
 
 ---
 

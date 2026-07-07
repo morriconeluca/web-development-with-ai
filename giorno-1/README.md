@@ -25,9 +25,6 @@ La prima giornata è organizzata in tre parti e un compito finale.
 ### 🧠 [Parte 1: Dal Neurone Biologico alle Reti Neurali](01-neurone-biologico-reti-neurali.md)
 
 - _Cosa imparerai_: La scala evolutiva dell'IA, la differenza tra programmazione tradizionale, Machine Learning e Deep Learning, il funzionamento intimo delle reti neurali (pesi, bias, propagazione), la tokenizzazione, il parallelismo biologico della plasticità neuronale e la confutazione dei "pappagalli stocastici", l'intenzionalità umana e la transizione da sintassi a intento.
-- **Risorse Video**:
-  - [Come imparano le reti neurali](https://www.youtube.com/watch?v=MJlrabo6ARk)
-  - [Come funziona l'elaborazione del linguaggio naturale (NLP)](https://www.youtube.com/watch?v=hFyi2sSsm4E)
 
 ### 🔌 [Parte 2: Lo Spettro dell'IA e il Context Engineering](02-vibe-coding-agentic-engineering.md)
 
