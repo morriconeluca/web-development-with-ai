@@ -1,8 +1,8 @@
-# Ora 2: Frontend Rapido con Tailwind CSS (Sviluppo UI)
+# Parte 2: Frontend Rapido con Tailwind CSS (Sviluppo UI)
 
 ---
 
-## | [« Ora 1: Le basi del Web](01-basi-web-architettura.md) | **Ora 2: Frontend Rapido con Tailwind CSS** | [Ora 3: Database Firestore](03-database-firestore.md) » |
+## | [« Parte 1: Le Basi del Web (Teoria & Ispezione)](01-basi-web-architettura.md) | **Parte 2: Frontend Rapido con Tailwind CSS (Sviluppo UI)** | [Parte 3: Database in Tempo Reale con Firestore](03-database-firestore.md) » |
 
 In questa lezione impareremo le basi del frontend moderno. Vedremo come strutturare una pagina web per renderla facilmente leggibile sia dagli utenti che dagli agenti IA, come manipolare il DOM in JavaScript e come usare il framework Tailwind CSS per velocizzare lo sviluppo visuale.
 
@@ -199,4 +199,4 @@ Crea un file locale sul tuo computer con questo codice e aprilo nel browser:
 
 ---
 
-[« Ora 1: Le Basi del Web](01-basi-web-architettura.md) | **Ora 2: Frontend Rapido con Tailwind CSS** | [Ora 3: Database Firestore](03-database-firestore.md) » |
+[« Parte 1: Le Basi del Web (Teoria & Ispezione)](01-basi-web-architettura.md) | **Parte 2: Frontend Rapido con Tailwind CSS (Sviluppo UI)** | [Parte 3: Database in Tempo Reale con Firestore](03-database-firestore.md) » |

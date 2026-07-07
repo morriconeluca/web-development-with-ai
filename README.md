@@ -52,7 +52,7 @@ La dispensa è divisa in giornate didattiche indipendenti ma collegate. Puoi nav
 
 ## 🛠️ Come usare questa Guida Navigabile
 
-Ogni pagina di questa dispensa contiene una barra di navigazione in alto e in basso per permetterti di muoverti agevolmente tra le ore di lezione e i compiti.
+Ogni pagina di questa dispensa contiene una barra di navigazione in alto e in basso per permetterti di muoverti agevolmente tra le parti di lezione e i compiti.
 Usa il tuo IDE o visualizza i file direttamente su GitHub per un'esperienza di lettura ottimale.
 
 ---

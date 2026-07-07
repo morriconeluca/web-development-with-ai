@@ -1,10 +1,10 @@
-# Ora 2: Lo Spettro dell'IA e il Context Engineering
+# Parte 2: Lo Spettro dell'IA e il Context Engineering
 
 ---
 
-## | [« Ora 1: Neurone Biologico e Reti Neurali](01-neurone-biologico-reti-neurali.md) | **Ora 2: Spettro IA e Context Engineering** | [Ora 3: AI-Driven SDLC e Setup](03-sdlc-ruoli-setup.md) » |
+## | [« Parte 1: Dal Neurone Biologico alle Reti Neurali](01-neurone-biologico-reti-neurali.md) | **Parte 2: Lo Spettro dell'IA e il Context Engineering** | [Parte 3: AI-Driven SDLC e Setup Strumenti](03-sdlc-ruoli-setup.md) » |
 
-In questa seconda ora approfondiremo come dialogare con i modelli di linguaggio in modo disciplinato (Prompt Engineering), come gli agenti autonomi gestiscono il loro ciclo di lavoro, lo spettro che separa il "Vibe Coding" dall'ingegneria agentica ed effettueremo una sessione di prototipazione in Google AI Studio.
+In questa seconda parte approfondiremo come dialogare con i modelli di linguaggio in modo disciplinato (Prompt Engineering), come gli agenti autonomi gestiscono il loro ciclo di lavoro, lo spettro che separa il "Vibe Coding" dall'ingegneria agentica ed effettueremo una sessione di prototipazione in Google AI Studio.
 
 ---
 
@@ -209,4 +209,4 @@ Utilizza i prompt seguenti all'interno della chat di AI Studio per vedere come G
 
 ---
 
-[« Ora 1: Neurone Biologico e Reti Neurali](01-neurone-biologico-reti-neurali.md) | **Ora 2: Spettro IA e Context Engineering** | [Ora 3: AI-Driven SDLC e Setup](03-sdlc-ruoli-setup.md) » |
+[« Parte 1: Dal Neurone Biologico alle Reti Neurali](01-neurone-biologico-reti-neurali.md) | **Parte 2: Lo Spettro dell'IA e il Context Engineering** | [Parte 3: AI-Driven SDLC e Setup Strumenti](03-sdlc-ruoli-setup.md) » |

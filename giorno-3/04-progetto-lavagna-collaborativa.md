@@ -1,8 +1,8 @@
-# Ora 4: Sviluppo del Progetto - Lavagna Collaborativa
+# Parte 4: Sviluppo del Progetto - Lavagna Collaborativa
 
 ---
 
-## | [« Ora 3: Database Firestore](03-database-firestore.md) | **Ora 4: Sviluppo del Progetto - Lavagna Collaborativa** | [Esercizio Giorno 3: Post-it Personalizzati](05-compito-postit-personalizzati.md) » |
+## | [« Parte 3: Database in Tempo Reale con Firestore](03-database-firestore.md) | **Parte 4: Sviluppo del Progetto - Lavagna Collaborativa** | [Esercizio Giorno 3: Post-it Personalizzati e Collaborazione](05-compito-postit-personalizzati.md) » |
 
 È il momento di unire tutti i tasselli studiati ed avviare il nostro progetto pratico di gruppo: la **Lavagna Collaborativa di Post-it in tempo reale**. In questo laboratorio guideremo l'agente integrato nell'IDE ad aiutarci nella stesura del codice, comprendendo come implementare il drag-and-drop logico e la sincronizzazione di rete.
 
@@ -26,7 +26,7 @@ Il modello dati del singolo documento all'interno della collezione `postit` su F
 Ecco il codice sorgente completo da salvare nel tuo workspace come `index.html`.
 
 > [!IMPORTANT]
-> Ricorda di sostituire l'oggetto `firebaseConfig` con le credenziali del tuo progetto copiate precedentemente dalla console di Firebase durante l'Ora 3.
+> Ricorda di sostituire l'oggetto `firebaseConfig` con le credenziali del tuo progetto copiate precedentemente dalla console di Firebase durante la Parte 3.
 
 ```html
 <!DOCTYPE html>
@@ -269,4 +269,4 @@ postit.addEventListener('dblclick', async () => {
 
 ---
 
-[« Ora 3: Database Firestore](03-database-firestore.md) | **Ora 4: Sviluppo del Progetto - Lavagna Collaborativa** | [Esercizio Giorno 3: Post-it Personalizzati](05-compito-postit-personalizzati.md) » |
+[« Parte 3: Database in Tempo Reale con Firestore](03-database-firestore.md) | **Parte 4: Sviluppo del Progetto - Lavagna Collaborativa** | [Esercizio Giorno 3: Post-it Personalizzati e Collaborazione](05-compito-postit-personalizzati.md) » |

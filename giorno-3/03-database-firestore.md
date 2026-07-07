@@ -1,10 +1,10 @@
-# Ora 3: Database in Tempo Reale con Firestore
+# Parte 3: Database in Tempo Reale con Firestore
 
 ---
 
-## | [« Ora 2: Frontend Rapido con Tailwind CSS](02-frontend-rapido-tailwind.md) | **Ora 3: Database Firestore** | [Ora 4: Sviluppo del Progetto - Lavagna Collaborativa](04-progetto-lavagna-collaborativa.md) » |
+## | [« Parte 2: Frontend Rapido con Tailwind CSS (Sviluppo UI)](02-frontend-rapido-tailwind.md) | **Parte 3: Database in Tempo Reale con Firestore** | [Parte 4: Sviluppo del Progetto - Lavagna Collaborativa](04-progetto-lavagna-collaborativa.md) » |
 
-Nelle prime due ore abbiamo visto come strutturare l'interfaccia (client) e come i dati viaggiano sul web. Ora collegheremo la nostra applicazione a un database in cloud di tipo NoSQL, imparando a configurare Firebase Firestore ed a sfruttare la sincronizzazione dati in tempo reale per abilitare la collaborazione tra diversi utenti.
+Nelle prime due parti abbiamo visto come strutturare l'interfaccia (client) e come i dati viaggiano sul web. Ora collegheremo la nostra applicazione a un database in cloud di tipo NoSQL, imparando a configurare Firebase Firestore ed a sfruttare la sincronizzazione dati in tempo reale per abilitare la collaborazione tra diversi utenti.
 
 ---
 
@@ -124,4 +124,4 @@ onSnapshot(colRef, (snapshot) => {
 
 ---
 
-[« Ora 2: Frontend Rapido con Tailwind CSS](02-frontend-rapido-tailwind.md) | **Ora 3: Database Firestore** | [Ora 4: Sviluppo del Progetto - Lavagna Collaborativa](04-progetto-lavagna-collaborativa.md) » |
+[« Parte 2: Frontend Rapido con Tailwind CSS (Sviluppo UI)](02-frontend-rapido-tailwind.md) | **Parte 3: Database in Tempo Reale con Firestore** | [Parte 4: Sviluppo del Progetto - Lavagna Collaborativa](04-progetto-lavagna-collaborativa.md) » |

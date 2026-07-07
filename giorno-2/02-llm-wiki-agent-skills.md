@@ -1,16 +1,16 @@
-# Ora 2: LLM Wiki (Second Brain) e Agent Skills
+# Parte 2: LLM Wiki (Second Brain) e Agent Skills
 
 ---
 
-## | [« Ora 1: Markdown, RAG e il System Prompt](01-markdown-rag-system-prompt.md) | **Ora 2: LLM Wiki e Agent Skills** | [Ora 3: Sviluppo Assistito, AI Pitfalls e Resa Cognitiva](03-sviluppo-assistito-linee-guida.md) » |
+## | [« Parte 1: Markdown, RAG e il System Prompt](01-markdown-rag-system-prompt.md) | **Parte 2: LLM Wiki e Agent Skills** | [Parte 3: Sviluppo Assistito, AI Pitfalls e Resa Cognitiva](03-sviluppo-assistito-linee-guida.md) » |
 
-In questa seconda ora vedremo come strutturare la conoscenza a lungo termine e le istruzioni per i nostri agenti IA. Esploreremo il pattern dell'**LLM Wiki (Second Brain)** per creare una base di conoscenza cumulativa e persistente in Obsidian, ed approfondiremo la specifica e la creazione delle **Agent Skills**.
+In questa seconda parte vedremo come strutturare la conoscenza a lungo termine e le istruzioni per i nostri agenti IA. Esploreremo il pattern dell'**LLM Wiki (Second Brain)** per creare una base di conoscenza cumulativa e persistente in Obsidian, ed approfondiremo la specifica e la creazione delle **Agent Skills**.
 
 ---
 
 ## 🧠 1. L'Alternativa al RAG: Il Pattern LLM Wiki (Second Brain)
 
-Come abbiamo visto nell'Ora 1, l'architettura RAG classica è efficiente ma soffre di un limite: è _stateless_. Ogni volta che poniamo una domanda, l'LLM ricomincia la ricerca semantica da zero, estraendo frammenti scollegati e provando a ricostruire le relazioni concettuali al volo. Non c'è un accumulo stabile della conoscenza.
+Come abbiamo visto nella Parte 1, l'architettura RAG classica è efficiente ma soffre di un limite: è _stateless_. Ogni volta che poniamo una domanda, l'LLM ricomincia la ricerca semantica da zero, estraendo frammenti scollegati e provando a ricostruire le relazioni concettuali al volo. Non c'è un accumulo stabile della conoscenza.
 
 ### L'Idea di Andrej Karpathy: La Wiki Cumulativa e Persistente
 
@@ -40,7 +40,7 @@ Mettiamo in pratica il pattern di Karpathy configurando una wiki personale per m
 
 1. Apri **Obsidian** e crea un nuovo archivio (vault) in una cartella locale dedicata, ad esempio `llm-wiki-sdlc`.
 2. All'interno della cartella dell'archivio, crea una sottocartella chiamata `raw/` per le fonti grezze e una cartella `wiki/` per i file organizzati dall'agente.
-3. Copia il file **[llm-wiki.md](llm-wiki/llm-wiki.md)** (il manifesto originale tratto dal [Gist di Andrej Karpathy](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)) all'interno della cartella dell'archivio.
+3. Copia il file **[llm-wiki.md](../materiali/llm-wiki/llm-wiki.md)** (il manifesto originale tratto dal [Gist di Andrej Karpathy](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)) all'interno della cartella dell'archivio.
 4. Avvia il tuo agente di sviluppo (come Antigravity) all'interno di questa directory ed esegui il seguente prompt di avvio (Wiki Creation Prompt) incollando alla fine di esso anche il contenuto del file `llm-wiki.md` per consentire all'agente di leggerne le specifiche:
 
    ```text
@@ -57,7 +57,7 @@ A questo punto, l'agente inizializzerà i file di controllo `index.md` (l'indice
 
 ### Il Primo Ingest
 
-1. Scarica e copia il whitepaper **[the-new-sdlc-with-vibe-coding.pdf](llm-wiki/the-new-sdlc-with-vibe-coding.pdf)** all'interno della cartella `raw/`.
+1. Scarica e copia il whitepaper **[the-new-sdlc-with-vibe-coding.pdf](../materiali/llm-wiki/the-new-sdlc-with-vibe-coding.pdf)** all'interno della cartella `raw/`.
 2. Ordina all'agente di eseguire l'ingestione tramite il prompt:
 
 ```text
@@ -80,7 +80,7 @@ L'agente non leggerà il PDF originale da zero, ma interrogherà le schede già 
 
 ## 🔌 3. Cosa sono le Agent Skills?
 
-Un System Prompt generico (come quello creato nell'Ora 1) indica all'agente come comportarsi in _ogni_ circostanza. Tuttavia, man mano che un progetto cresce, l'agente deve acquisire competenze specifiche che non devono appesantire costantemente la finestra di contesto. Per fare questo si utilizzano le **Agent Skills**.
+Un System Prompt generico (come quello creato nella Parte 1) indica all'agente come comportarsi in _ogni_ circostanza. Tuttavia, man mano che un progetto cresce, l'agente deve acquisire competenze specifiche che non devono appesantire costantemente la finestra di contesto. Per fare questo si utilizzano le **Agent Skills**.
 
 Una **Agent Skill** è un modulo autonomo costituito da istruzioni, script o configurazioni che l'agente carica in memoria solo quando necessario.
 
@@ -98,9 +98,9 @@ Una skill è rappresentata da un file Markdown (`SKILL.md`) che segue regole pre
 
 ## 🛠️ 4. Pratica Parte 2: Creare una Skill Personalizzata (stil-novo)
 
-Trasformiamo il comportamento poetico dell'agente creato nell'Ora 1 in una skill formale riutilizzabile, che l'utente può richiamare a comando.
+Trasformiamo il comportamento poetico dell'agente creato nella Parte 1 in una skill formale riutilizzabile, che l'utente può richiamare a comando.
 
-1. Torna alla cartella `poetry` creata nell'Ora 1 ed elimina il file `AGENTS.md` (questo disabiliterà il comportamento poetico permanente dell'agente in quella directory, facendolo tornare a rispondere normalmente).
+1. Torna alla cartella `poetry` creata nella Parte 1 ed elimina il file `AGENTS.md` (questo disabiliterà il comportamento poetico permanente dell'agente in quella directory, facendolo tornare a rispondere normalmente).
 2. Dentro la cartella `poetry`, crea la sottocartella `.agents/skills/stil-novo/` (il customization root locale).
 3. All'interno di questa cartella, crea il file `SKILL.md` e incolla il seguente codice:
 
@@ -136,4 +136,4 @@ L'agente caricherà temporaneamente la skill, applicherà le istruzioni del file
 
 ---
 
-[« Ora 1: Markdown, RAG e il System Prompt](01-markdown-rag-system-prompt.md) | **Ora 2: LLM Wiki e Agent Skills** | [Ora 3: Sviluppo Assistito, AI Pitfalls e Resa Cognitiva](03-sviluppo-assistito-linee-guida.md) » |
+[« Parte 1: Markdown, RAG e il System Prompt](01-markdown-rag-system-prompt.md) | **Parte 2: LLM Wiki e Agent Skills** | [Parte 3: Sviluppo Assistito, AI Pitfalls e Resa Cognitiva](03-sviluppo-assistito-linee-guida.md) » |

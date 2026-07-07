@@ -1,10 +1,10 @@
-# Ora 1: Dal Neurone Biologico alle Reti Neurali
+# Parte 1: Dal Neurone Biologico alle Reti Neurali
 
 ---
 
-## | [« Indice Giorno 1](README.md) | **Ora 1: Dal Neurone Biologico alle Reti Neurali** | [Ora 2: Spettro IA e Context Engineering](02-vibe-coding-agentic-engineering.md) » |
+## | [« Indice Giorno 1](README.md) | **Parte 1: Dal Neurone Biologico alle Reti Neurali** | [Parte 2: Lo Spettro dell'IA e il Context Engineering](02-vibe-coding-agentic-engineering.md) » |
 
-In questa prima ora esploreremo le fondamenta teoriche dell'Intelligenza Artificiale Generativa, analizzando i parallelismi con il funzionamento del cervello umano, i limiti intrinseci dei modelli e come l'approccio allo sviluppo software stia cambiando radicalmente.
+In questa prima parte esploreremo le fondamenta teoriche dell'Intelligenza Artificiale Generativa, analizzando i parallelismi con il funzionamento del cervello umano, i limiti intrinseci dei modelli e come l'approccio allo sviluppo software stia cambiando radicalmente.
 
 ---
 
@@ -189,8 +189,8 @@ Se l'IA è in grado di generare la sintassi corretta a partire da una descrizion
 2. **Fornire il contesto corretto** all'IA per evitare errori o allucinazioni.
 3. **Verificare la correttezza dell'output** tramite il test e il ragionamento logico.
 
-Nelle prossime ore vedremo come tradurre queste considerazioni in tecniche di Prompt Engineering e sviluppo agentico.
+Nelle prossime parti vedremo come tradurre queste considerazioni in tecniche di Prompt Engineering e sviluppo agentico.
 
 ---
 
-[« Indice Giorno 1](README.md) | **Ora 1: Dal Neurone Biologico alle Reti Neurali** | [Ora 2: Spettro IA e Context Engineering](02-vibe-coding-agentic-engineering.md) » |
+[« Indice Giorno 1](README.md) | **Parte 1: Dal Neurone Biologico alle Reti Neurali** | [Parte 2: Lo Spettro dell'IA e il Context Engineering](02-vibe-coding-agentic-engineering.md) » |

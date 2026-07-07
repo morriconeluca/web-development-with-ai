@@ -1,8 +1,8 @@
-# Ora 1: Le Basi del Web (Teoria & Ispezione)
+# Parte 1: Le Basi del Web (Teoria & Ispezione)
 
 ---
 
-## | [« Indice Giorno 3](README.md) | **Ora 1: Le basi del Web** | [Ora 2: Frontend Rapido con Tailwind CSS](02-frontend-rapido-tailwind.md) » |
+## | [« Indice Giorno 3](README.md) | **Parte 1: Le Basi del Web (Teoria & Ispezione)** | [Parte 2: Frontend Rapido con Tailwind CSS (Sviluppo UI)](02-frontend-rapido-tailwind.md) » |
 
 Prima di costruire applicazioni complesse in cloud, dobbiamo capire come funziona la spina dorsale del Web: l'architettura client-server e il protocollo di comunicazione HTTP/HTTPS. In questa lezione impareremo anche ad ispezionare il funzionamento della rete direttamente dal browser.
 
@@ -210,4 +210,4 @@ La magia del database in tempo reale che useremo più tardi (Firebase Firestore)
 
 ---
 
-[« Indice Giorno 3](README.md) | **Ora 1: Le basi del Web** | [Ora 2: Frontend Rapido con Tailwind CSS](02-frontend-rapido-tailwind.md) » |
+[« Indice Giorno 3](README.md) | **Parte 1: Le Basi del Web (Teoria & Ispezione)** | [Parte 2: Frontend Rapido con Tailwind CSS (Sviluppo UI)](02-frontend-rapido-tailwind.md) » |

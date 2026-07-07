@@ -1,10 +1,10 @@
-# Ora 3: AI-Driven SDLC e Setup Strumenti
+# Parte 3: AI-Driven SDLC e Setup Strumenti
 
 ---
 
-## | [« Ora 2: Spettro IA e Context Engineering](02-vibe-coding-agentic-engineering.md) | **Ora 3: AI-Driven SDLC e Setup** |
+## | [« Parte 2: Lo Spettro dell'IA e il Context Engineering](02-vibe-coding-agentic-engineering.md) | **Parte 3: AI-Driven SDLC e Setup Strumenti** | [Giorno 2: Documentazione e Sviluppo Assistito da Agent Skills e LLM Wiki »](../giorno-2/README.md) |
 
-In questa terza ora vedremo come l'Intelligenza Artificiale Generativa stia ridisegnando le fasi di sviluppo di un progetto software (SDLC), quali ruoli assume il programmatore, affronteremo il setup dell'ambiente di sviluppo e faremo la nostra prima esercitazione di laboratorio.
+In questa terza parte vedremo come l'Intelligenza Artificiale Generativa stia ridisegnando le fasi di sviluppo di un progetto software (SDLC), quali ruoli assume il programmatore, affronteremo il setup dell'ambiente di sviluppo e faremo la nostra prima esercitazione di laboratorio.
 
 ---
 
@@ -100,4 +100,4 @@ Se non lo hai già fatto:
 
 ---
 
-[« Ora 2: Spettro IA e Context Engineering](02-vibe-coding-agentic-engineering.md) | **Ora 3: AI-Driven SDLC e Setup**
+[« Parte 2: Lo Spettro dell'IA e il Context Engineering](02-vibe-coding-agentic-engineering.md) | **Parte 3: AI-Driven SDLC e Setup Strumenti** | [Giorno 2: Documentazione e Sviluppo Assistito da Agent Skills e LLM Wiki »](../giorno-2/README.md) |

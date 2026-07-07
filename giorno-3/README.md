@@ -2,7 +2,7 @@
 
 ---
 
-## | [« Indice del Corso](../README.md) | **Introduzione Giorno 3** | [Ora 1: Le basi del Web](01-basi-web-architettura.md) » |
+## | [« Parte 3: Sviluppo Assistito, AI Pitfalls e Resa Cognitiva](../giorno-2/03-sviluppo-assistito-linee-guida.md) | **Introduzione Giorno 3** | [Parte 1: Le Basi del Web (Teoria & Ispezione)](01-basi-web-architettura.md) » |
 
 Benvenuto nella terza giornata del corso! L'obiettivo di oggi è esplorare le fondamenta delle architetture web moderne, imparare a creare rapidamente interfacce web accattivanti utilizzando Tailwind CSS ed integrare un database cloud NoSQL in tempo reale (Firebase Firestore) per costruire un'applicazione collaborativa interattiva.
 
@@ -28,23 +28,23 @@ Benvenuto nella terza giornata del corso! L'obiettivo di oggi è esplorare le fo
 
 Fai clic su uno dei capitoli seguenti per iniziare la sessione di studio:
 
-### 🌐 [Ora 1: Le basi del Web (Teoria & Ispezione)](01-basi-web-architettura.md)
+### 🌐 [Parte 1: Le Basi del Web (Teoria & Ispezione)](01-basi-web-architettura.md)
 
-- _Cosa imparerai_: Il viaggio dei dati su internet, l'architettura client-server, anatomia delle richieste HTTP (GET/POST/Headers/Query) e ispezione con la scheda _Network_ di Chrome DevTools.
+- _Cosa imparerai_: Il viaggio dei dati su internet, l'architettura client-server, anatomia delle richieste HTTP (GET/POST/Headers/Query), ispezione con la scheda _Network_ di Chrome DevTools e il confronto tra connessioni persistenti (WebSocket) ed HTTP.
 
-### 🎨 [Ora 2: Frontend Rapido con Tailwind CSS (Sviluppo UI)](02-frontend-rapido-tailwind.md)
+### 🎨 [Parte 2: Frontend Rapido con Tailwind CSS (Sviluppo UI)](02-frontend-rapido-tailwind.md)
 
 - _Cosa imparerai_: HTML5 semantico per l'IA, manipolazione del DOM con JavaScript moderno e i vantaggi di Tailwind CSS (utility-first) per l'interazione con gli agenti intelligenti.
 
-### 🔋 [Ora 3: Database in Tempo Reale con Firestore (Integrazione Dati)](03-database-firestore.md)
+### 🔋 [Parte 3: Database in Tempo Reale con Firestore](03-database-firestore.md)
 
 - _Cosa imparerai_: NoSQL (collezioni e documenti), setup della Firebase Console, inclusione dell'SDK Firebase via CDN ed ascolto in tempo reale con `onSnapshot`.
 
-### 📝 [Ora 4: Sviluppo del Progetto - Lavagna Collaborativa (Laboratorio)](04-progetto-lavagna-collaborativa.md)
+### 📝 [Parte 4: Sviluppo del Progetto - Lavagna Collaborativa](04-progetto-lavagna-collaborativa.md)
 
 - _Cosa imparerai_: Architettura dati dei post-it, integrazione del drag-and-drop in Javascript e test collaborativo in tempo reale dell'applicazione di gruppo.
 
-### 📌 [Esercizio Giorno 3: Post-it Personalizzati](05-compito-postit-personalizzati.md)
+### 📌 [Esercizio Giorno 3: Post-it Personalizzati e Collaborazione](05-compito-postit-personalizzati.md)
 
 - _Cosa farai_: Un'estensione autonoma del progetto per personalizzare i colori, inserire l'autore dei post-it o gestire la cancellazione da database.
 
@@ -54,4 +54,4 @@ Fai clic su uno dei capitoli seguenti per iniziare la sessione di studio:
 
 ---
 
-[« Indice del Corso](../README.md) | **Introduzione Giorno 3** | [Ora 1: Le basi del Web](01-basi-web-architettura.md) » |
+[« Parte 3: Sviluppo Assistito, AI Pitfalls e Resa Cognitiva](../giorno-2/03-sviluppo-assistito-linee-guida.md) | **Introduzione Giorno 3** | [Parte 1: Le Basi del Web (Teoria & Ispezione)](01-basi-web-architettura.md) » |

@@ -2,7 +2,7 @@
 
 ---
 
-## | [« Esercizio Giorno 3: Post-it Personalizzati](05-compito-postit-personalizzati.md) | **Messa in Produzione: GitHub e Netlify** | [Indice Giorno 3](README.md) |
+## | [« Esercizio Giorno 3: Post-it Personalizzati e Collaborazione](05-compito-postit-personalizzati.md) | **Messa in Produzione: GitHub e Deploy su Netlify** | [Indice Giorno 3](README.md) |
 
 Al termine del nostro percorso pratico, dopo aver sviluppato ed esteso l'applicazione "Lavagna Post-it Collaborativa", il passo finale è pubblicarla online. In questa lezione vedremo come creare il repository su GitHub, sincronizzare i nostri file locali in cloud ed effettuare il deploy gratuito su Netlify per rendere il progetto accessibile a chiunque.
 
@@ -100,4 +100,4 @@ Una volta completato l'Esercizio del Giorno 3 e verificato che il deploy su Netl
 
 ---
 
-[« Esercizio Giorno 3: Post-it Personalizzati](05-compito-postit-personalizzati.md) | **Messa in Produzione: GitHub e Netlify** | [Indice Giorno 3](README.md) |
+[« Esercizio Giorno 3: Post-it Personalizzati e Collaborazione](05-compito-postit-personalizzati.md) | **Messa in Produzione: GitHub e Deploy su Netlify** | [Indice Giorno 3](README.md) |

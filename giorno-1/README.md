@@ -2,7 +2,7 @@
 
 ---
 
-## | [« Indice del Corso](../README.md) | **Introduzione Giorno 1** | [Ora 1: Neurone Biologico e Reti Neurali](01-neurone-biologico-reti-neurali.md) » |
+## | [« Indice del Corso](../README.md) | **Introduzione Giorno 1** | [Parte 1: Dal Neurone Biologico alle Reti Neurali](01-neurone-biologico-reti-neurali.md) » |
 
 Benvenuto nella prima giornata del corso! L'obiettivo di oggi è gettare basi solide sul funzionamento concettuale, filosofico e pratico dei modelli di linguaggio (LLM) e degli agenti autonomi, allestire la tua postazione di lavoro con strumenti all'avanguardia ed effettuare le tue prime esercitazioni pratiche di prototipazione.
 
@@ -20,23 +20,23 @@ Benvenuto nella prima giornata del corso! L'obiettivo di oggi è gettare basi so
 
 ---
 
-La prima giornata è organizzata in tre moduli orari e un compito finale.
+La prima giornata è organizzata in tre parti e un compito finale.
 
-### 🧠 [Ora 1: Dal Neurone Biologico alle Reti Neurali (Teoria & Filosofia)](01-neurone-biologico-reti-neurali.md)
+### 🧠 [Parte 1: Dal Neurone Biologico alle Reti Neurali](01-neurone-biologico-reti-neurali.md)
 
-- _Cosa imparerai_: Il parallelismo biologico della plasticità neuronale, la neurobiologia dell'apprendimento e della memoria, la confutazione del concetto di "pappagallo stocastico", l'intenzionalità umana e la transizione da sintassi a intento.
+- _Cosa imparerai_: La scala evolutiva dell'IA, la differenza tra programmazione tradizionale, Machine Learning e Deep Learning, il funzionamento intimo delle reti neurali (pesi, bias, propagazione), la tokenizzazione, il parallelismo biologico della plasticità neuronale e la confutazione dei "pappagalli stocastici", l'intenzionalità umana e la transizione da sintassi a intento.
 - **Risorse Video**:
   - [Come imparano le reti neurali](https://www.youtube.com/watch?v=MJlrabo6ARk)
   - [Come funziona l'elaborazione del linguaggio naturale (NLP)](https://www.youtube.com/watch?v=hFyi2sSsm4E)
 
-### 🔌 [Ora 2: Lo Spettro dell'IA e il Context Engineering (Prompting & Agenti)](02-vibe-coding-agentic-engineering.md)
+### 🔌 [Parte 2: Lo Spettro dell'IA e il Context Engineering](02-vibe-coding-agentic-engineering.md)
 
 - _Cosa imparerai_: Tecniche di Prompt Engineering con esempi reali corretti ed errati, la struttura interna di un Agente IA, il concetto di contesto ed il Context Engineering con i relativi limiti fisici ("Lost in the Middle"), e la verifica dell'output. Prototipizzazione rapida con [Google AI Studio](https://aistudio.google.com/).
 
-### 💻 [Ora 3: AI-Driven SDLC e Setup Strumenti (Ambiente)](03-sdlc-ruoli-setup.md)
+### 💻 [Parte 3: AI-Driven SDLC e Setup Strumenti](03-sdlc-ruoli-setup.md)
 
-- _Cosa imparerai_: Come l'IA trasforma il ciclo di vita del software, i ruoli di Conduttore vs Orchestratore, il problema dell'80/20, il setup di Git/GitHub, l'installazione di Google Antigravity IDE 2.0, l'installazione di Obsidian come "secondo cervello" (Second Brain) e la prima clonazione del repository.
+- _Cosa imparerai_: Come l'IA trasforma il ciclo di vita del software (AI-Driven SDLC), i ruoli di Conduttore vs Orchestratore, il problema dell'80% e l'economia dello sviluppo (CapEx/OpEx), il setup di Git/GitHub, l'installazione di Google Antigravity IDE 2.0 e l'installazione di Obsidian come "secondo cervello" (Second Brain).
 
 ---
 
-[« Indice del Corso](../README.md) | **Introduzione Giorno 1** | [Ora 1: Neurone Biologico e Reti Neurali](01-neurone-biologico-reti-neurali.md) » |
+[« Indice del Corso](../README.md) | **Introduzione Giorno 1** | [Parte 1: Dal Neurone Biologico alle Reti Neurali](01-neurone-biologico-reti-neurali.md) » |

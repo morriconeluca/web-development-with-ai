@@ -1,10 +1,10 @@
-# Ora 1: Markdown, RAG e il System Prompt
+# Parte 1: Markdown, RAG e il System Prompt
 
 ---
 
-## | [« Introduzione Giorno 2](README.md) | **Ora 1: Markdown, RAG e il System Prompt** | [Ora 2: LLM Wiki e Agent Skills](02-llm-wiki-agent-skills.md) » |
+## | [« Introduzione Giorno 2](README.md) | **Parte 1: Markdown, RAG e il System Prompt** | [Parte 2: LLM Wiki (Second Brain) e Agent Skills](02-llm-wiki-agent-skills.md) » |
 
-In questa prima ora esploreremo gli strumenti e i concetti fondamentali per comunicare in modo chiaro e strutturato con i modelli di linguaggio. Vedremo perché il Markdown è la sintassi ideale per definire l'intento uomo-macchina, realizzeremo un'esercitazione pratica di personalizzazione del comportamento del modello tramite un System Prompt in stile stilnovista e vedremo come superare i limiti di memoria dell'LLM tramite l'architettura RAG.
+In questa prima parte esploreremo gli strumenti e i concetti fondamentali per comunicare in modo chiaro e strutturato con i modelli di linguaggio. Vedremo perché il Markdown è la sintassi ideale per definire l'intento uomo-macchina, realizzeremo un'esercitazione pratica di personalizzazione del comportamento del modello tramite un System Prompt in stile stilnovista e vedremo come superare i limiti di memoria dell'LLM tramite l'architettura RAG.
 
 ---
 
@@ -102,7 +102,7 @@ parla, ch'i' son disposto e ben prestante
 a darti aita in ogni tua contese.
 ```
 
-_Nota didattica_: L'agente adotterà immediatamente questa personalità e questi vincoli linguistici in ogni risposta successiva, dimostrando l'efficacia del System Prompt nel plasmare le risposte. Nel prossimo modulo (Ora 2) trasformeremo questa impostazione grezza in una **Agent Skill** formale.
+_Nota didattica_: L'agente adotterà immediatamente questa personalità e questi vincoli linguistici in ogni risposta successiva, dimostrando l'efficacia del System Prompt nel plasmare le risposte. Nel prossimo modulo (Parte 2) trasformeremo questa impostazione grezza in una **Agent Skill** formale.
 
 ---
 
@@ -146,4 +146,4 @@ _Limite del RAG classico_: Il modello riscopre le relazioni da zero ad ogni sing
 
 ---
 
-[« Introduzione Giorno 2](README.md) | **Ora 1: Markdown, RAG e il System Prompt** | [Ora 2: LLM Wiki e Agent Skills](02-llm-wiki-agent-skills.md) » |
+[« Introduzione Giorno 2](README.md) | **Parte 1: Markdown, RAG e il System Prompt** | [Parte 2: LLM Wiki (Second Brain) e Agent Skills](02-llm-wiki-agent-skills.md) » |

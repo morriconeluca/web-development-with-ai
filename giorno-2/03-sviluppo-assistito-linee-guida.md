@@ -1,16 +1,16 @@
-# Ora 3: Sviluppo Assistito, AI Pitfalls e Resa Cognitiva
+# Parte 3: Sviluppo Assistito, AI Pitfalls e Resa Cognitiva
 
 ---
 
-## | [« Ora 2: LLM Wiki (Second Brain) e Agent Skills](02-llm-wiki-agent-skills.md) | **Ora 3: Sviluppo Assistito, AI Pitfalls e Resa Cognitiva** | [Giorno 3: Architettura Web »](../giorno-3/README.md) |
+## | [« Parte 2: LLM Wiki (Second Brain) e Agent Skills](02-llm-wiki-agent-skills.md) | **Parte 3: Sviluppo Assistito, AI Pitfalls e Resa Cognitiva** | [Giorno 3: Architettura Web »](../giorno-3/README.md) |
 
-In questa terza ora integreremo una skill avanzata di apprendimento interattivo (`/teach`) ideata da Matt Pocock nel nostro workspace, analizzeremo criticamente l'evoluzione del ruolo dello sviluppatore software nell'era degli agenti autonomi esplorando lo **Spettro dello Sviluppo con IA**, discuteremo le insidie dello sviluppo assistito (**AI Pitfalls** di Andrej Karpathy) ed affronteremo il rischio psicologico ed operativo della **Resa Cognitiva** (Cognitive Surrender di Addy Osmani).
+In questa terza parte integreremo una skill avanzata di apprendimento interattivo (`/teach`) ideata da Matt Pocock nel nostro workspace, analizzeremo criticamente l'evoluzione del ruolo dello sviluppatore software nell'era degli agenti autonomi esplorando lo **Spettro dello Sviluppo con IA**, discuteremo le insidie dello sviluppo assistito (**AI Pitfalls** di Andrej Karpathy) ed affronteremo il rischio psicologico ed operativo della **Resa Cognitiva** (Cognitive Surrender di Addy Osmani).
 
 ---
 
 ## 🛠️ 1. Pratica: Espandere l'LLM Wiki e integrare la Skill /teach
 
-Riprendiamo il nostro progetto **LLM Wiki (Second Brain)** creato in Obsidian nell'Ora 2. In questa sessione pratica vedremo come arricchire la nostra base di conoscenza con nuove specifiche tecniche e come integrare una skill avanzata per fare in modo che l'agente utilizzi quelle stesse informazioni per insegnarci ad implementare nuove funzionalità.
+Riprendiamo il nostro progetto **LLM Wiki (Second Brain)** creato in Obsidian nella Parte 2. In questa sessione pratica vedremo come arricchire la nostra base di conoscenza con nuove specifiche tecniche e come integrare una skill avanzata per fare in modo che l'agente utilizzi quelle stesse informazioni per insegnarci ad implementare nuove funzionalità.
 
 ### A. Istruzioni Aggiuntive: Aggiungere le Fonti sulle Skills
 
@@ -37,7 +37,7 @@ Matt Pocock (noto educatore ed esperto di TypeScript) ha ideato una collezione d
 Tra queste vogliamo integrare la skill `/teach` direttamente **all'interno del nostro progetto LLM Wiki** in Obsidian, in modo che l'agente possa consultare la conoscenza della wiki sulle specifiche e insegnarci passo dopo passo.
 
 1. All'interno della cartella principale del tuo archivio Obsidian (`llm-wiki-sdlc`), crea la cartella `.agents/skills/teach/` (il customization root locale dell'archivio).
-2. Copia all'interno di questa cartella tutti i file di supporto della skill `teach` che trovi in `materiali/giorno-2/skills/teach/`:
+2. Copia all'interno di questa cartella tutti i file di supporto della skill `teach` che trovi in `[materiali/skills/teach/](../materiali/skills/teach/)`:
    - `GLOSSARY-FORMAT.md`
    - `LEARNING-RECORD-FORMAT.md`
    - `MISSION-FORMAT.md`
@@ -248,4 +248,4 @@ Gli strumenti sono gli stessi in entrambi i casi. È l'atteggiamento ad essere d
 
 ---
 
-[« Ora 2: LLM Wiki (Second Brain) e Agent Skills](02-llm-wiki-agent-skills.md) | **Ora 3: Sviluppo Assistito, AI Pitfalls e Resa Cognitiva** | [Giorno 3: Architettura Web »](../giorno-3/README.md) |
+[« Parte 2: LLM Wiki (Second Brain) e Agent Skills](02-llm-wiki-agent-skills.md) | **Parte 3: Sviluppo Assistito, AI Pitfalls e Resa Cognitiva** | [Giorno 3: Architettura Web »](../giorno-3/README.md) |

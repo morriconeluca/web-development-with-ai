@@ -2,7 +2,7 @@
 
 ---
 
-## | [« Indice del Corso](../README.md) | **Introduzione Giorno 2** | [Ora 1: Markdown, RAG e il System Prompt](01-markdown-rag-system-prompt.md) » |
+## | [« Parte 3: AI-Driven SDLC e Setup Strumenti](../giorno-1/03-sdlc-ruoli-setup.md) | **Introduzione Giorno 2** | [Parte 1: Markdown, RAG e il System Prompt](01-markdown-rag-system-prompt.md) » |
 
 Benvenuto nella seconda giornata del corso! L'obiettivo di oggi è comprendere l'importanza di una documentazione formale e strutturata nello sviluppo guidato dall'Intelligenza Artificiale. Esploreremo come il Markdown funge da interfaccia di precisione per i modelli, confronteremo l'architettura di recupero RAG con il pattern cumulativo e persistente di un **LLM Wiki (Second Brain)** gestito su Obsidian, impareremo a ingegnerizzare le **Agent Skills** per guidare gli agenti in modo dichiarativo e discuteremo criticamente i concetti di **AI Pitfalls** e **Resa Cognitiva** (Cognitive Surrender).
 
@@ -23,20 +23,20 @@ Benvenuto nella seconda giornata del corso! L'obiettivo di oggi è comprendere l
 
 ---
 
-La seconda giornata è organizzata in tre moduli orari principali.
+La seconda giornata è organizzata in tre parti principali.
 
-### 📝 [Ora 1: Markdown, RAG e il System Prompt](01-markdown-rag-system-prompt.md)
+### 📝 [Parte 1: Markdown, RAG e il System Prompt](01-markdown-rag-system-prompt.md)
 
-- _Cosa imparerai_: L'utilizzo del Markdown per allineare l'intento uomo-macchina, la differenza tra prompt monouso e System Prompt (`AGENTS.md`) con la realizzazione di un esempio in stile stilnovista in una cartella dedicata, il problema della memoria nei modelli e il funzionamento fondamentale del RAG.
+- _Cosa imparerai_: Il video di ispirazione di Salvatore Sanfilippo (antirez) sui pericoli dell'uso passivo dell'IA, l'utilizzo del Markdown per allineare l'intento uomo-macchina, la differenza tra prompt monouso e System Prompt (`AGENTS.md`) con la realizzazione di un esempio in stile stilnovista, il problema della memoria nei modelli e il funzionamento fondamentale del RAG.
 
-### 🌐 [Ora 2: LLM Wiki (Second Brain) e Agent Skills](02-llm-wiki-agent-skills.md)
+### 🌐 [Parte 2: LLM Wiki (Second Brain) e Agent Skills](02-llm-wiki-agent-skills.md)
 
 - _Cosa imparerai_: Il pattern cumulativo dell'LLM Wiki, la configurazione pratica di un Second Brain su Obsidian per ingurgitare e sintetizzare informazioni (ingest e query), e la specifica delle Agent Skills. Trasformerai il System Prompt in stile stilnovista in una skill riutilizzabile.
 
-### ⚖️ [Ora 3: Sviluppo Assistito, AI Pitfalls e Resa Cognitiva](03-sviluppo-assistito-linee-guida.md)
+### ⚖️ [Parte 3: Sviluppo Assistito, AI Pitfalls e Resa Cognitiva](03-sviluppo-assistito-linee-guida.md)
 
 - _Cosa imparerai_: L'utilizzo del framework delle Agent Skills di Matt Pocock (come la skill `/teach`) per guidare l'apprendimento, lo Spettro dello Sviluppo con IA (Vibe Coding vs Agentic Engineering), le insidie dello sviluppo assistito (le AI Pitfalls di Karpathy) e il concetto neurale ed operativo di "Resa Cognitiva" (Cognitive Surrender di Addy Osmani) con relative letture di approfondimento.
 
 ---
 
-[« Indice del Corso](../README.md) | **Introduzione Giorno 2** | [Ora 1: Markdown, RAG e il System Prompt](01-markdown-rag-system-prompt.md) » |
+[« Parte 3: AI-Driven SDLC e Setup Strumenti](../giorno-1/03-sdlc-ruoli-setup.md) | **Introduzione Giorno 2** | [Parte 1: Markdown, RAG e il System Prompt](01-markdown-rag-system-prompt.md) » |
