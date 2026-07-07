@@ -99,6 +99,9 @@ Durante la spiegazione proietteremo questo video didattico che illustra il funzi
 
 - **Video**: [Dentro l'IA - Come funzionano i grandi modelli linguistici (LLM)? - Federico Ruggeri](https://www.youtube.com/watch?v=BkRKu3mn-o4) (Zanichelli)
 - **Temi chiave**: Il meccanismo probabilistico della predizione del token successivo, l'addestramento tramite _slot filling_ (completamento di parole mancanti), la necessità di miliardi di parametri e la differenza tra calcolo probabilistico e ragionamento conscio.
+- **Video Consigliati**:
+  - [Come imparano le reti neurali](https://www.youtube.com/watch?v=MJlrabo6ARk)
+  - [Come funziona l'elaborazione del linguaggio naturale (NLP)](https://www.youtube.com/watch?v=hFyi2sSsm4E)
 
 ---
 

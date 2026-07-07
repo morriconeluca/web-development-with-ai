@@ -2,7 +2,7 @@
 
 ---
 
-## | [« Ora 1: Neurone Biologico e Reti Neurali](01-neurone-biologico-reti-neurali.md) | **Ora 2: Spettro IA e Context Engineering** | [Ora 3: AI-Driven SDLC, Setup e Pratica](03-sdlc-ruoli-setup.md) » |
+## | [« Ora 1: Neurone Biologico e Reti Neurali](01-neurone-biologico-reti-neurali.md) | **Ora 2: Spettro IA e Context Engineering** | [Ora 3: AI-Driven SDLC e Setup](03-sdlc-ruoli-setup.md) » |
 
 In questa seconda ora approfondiremo come dialogare con i modelli di linguaggio in modo disciplinato (Prompt Engineering), come gli agenti autonomi gestiscono il loro ciclo di lavoro, lo spettro che separa il "Vibe Coding" dall'ingegneria agentica ed effettueremo una sessione di prototipazione in Google AI Studio.
 
@@ -12,7 +12,26 @@ In questa seconda ora approfondiremo come dialogare con i modelli di linguaggio 
 
 Il Prompt Engineering è l'arte e la scienza di strutturare gli input per ottenere risposte ottimali e prevedibili da un LLM. Di seguito analizziamo le 4 tecniche principali con esempi pratici non legati allo sviluppo software.
 
-### A. Zero-shot Prompting
+### A. Role Prompting
+
+Consiste nell'assegnare all'IA un ruolo, una personalità o un profilo professionale specifico prima di definire il compito. Questo aiuta il modello a restringere il dominio delle risposte e ad adottare la terminologia, il tono e il livello di dettaglio più appropriati.
+
+- **❌ Prompt Sbagliato (Senza ruolo)**:
+
+  ```text
+  Spiegami come funziona l'inflazione economica.
+  ```
+
+  _Perché è inefficace_: L'IA risponderà in modo generico, rischiando di essere troppo tecnica (usando formule o gergo accademico) oppure troppo banale.
+
+- **✅ Prompt Giusto**:
+
+  ```text
+  Ruolo: Sei un professore universitario di macroeconomia noto per la tua capacità di rendere i concetti complessi accessibili a chiunque.
+  Compito: Spiegami come funziona l'inflazione economica.
+  ```
+
+### B. Zero-shot Prompting
 
 Consiste nel chiedere all'IA di eseguire un compito senza fornirle alcun esempio precedente. Funziona bene per compiti semplici e per modelli molto potenti.
 
@@ -35,9 +54,7 @@ Consiste nel chiedere all'IA di eseguire un compito senza fornirle alcun esempio
   [Testo Storico di 3 pagine]
   ```
 
----
-
-### B. Few-shot Prompting
+### C. Few-shot Prompting
 
 Consiste nel fornire al modello 2 o più esempi concreti di input e output attesi per addestrarlo al volo sul formato o sullo stile desiderato. È fondamentale quando si richiede una formattazione rigida o una classificazione specifica.
 
@@ -68,9 +85,7 @@ Consiste nel fornire al modello 2 o più esempi concreti di input e output attes
   Output:
   ```
 
----
-
-### C. Chain of Thought (CoT) Prompting
+### D. Chain of Thought (CoT) Prompting
 
 Consiste nello spingere l'IA a scomporre un ragionamento complesso in passaggi logici intermedi prima di dare la risposta finale. Questo riduce drasticamente gli errori logico-matematici.
 
@@ -91,33 +106,48 @@ Consiste nello spingere l'IA a scomporre un ragionamento complesso in passaggi l
 
 ---
 
-### D. Context Engineering (Istruzioni di Sistema)
+## 🌐 2. Dal Prompt Engineering al Context Engineering
 
-Consiste nel fornire all'IA una base di dati o un documento di contesto a cui fare rigorosamente riferimento per rispondere, vietandole di usare informazioni esterne per evitare allucinazioni.
+Mentre il **Prompt Engineering** si concentra su _come_ formulare una domanda o un'istruzione (sintassi, regole, esempi e struttura del prompt), il **Context Engineering** rappresenta la sua naturale evoluzione. Questo approccio sposta l'attenzione su _quali informazioni_ circondano la richiesta e su come esse vengano selezionate e fornite all'IA.
 
-- **❌ Prompt Sbagliato**:
+### Cos'è il Contesto?
 
-  ```text
-  Posso tenere un cane di grossa taglia nel condominio "Fiori"?
-  ```
+Il **contesto** è l'insieme di tutti i dati che un modello di linguaggio (LLM) ha a disposizione per generare la risposta in un determinato momento. Include le istruzioni di sistema (System Prompt), la cronologia dei messaggi precedenti e tutte le risorse caricate nella conversazione (file di codice, documentazione, regole di stile).
 
-  _Perché è inefficace_: L'IA non conosce il condominio specifico e risponderà basandosi su leggi generali italiane o, peggio, inventerà una risposta plausibile (allucinazione).
+### Il Context Engineering come Evoluzione del Prompting
 
-- **✅ Prompt Giusto**:
+Nei progetti reali, l'ostacolo principale per un'IA non è la comprensione del comando singolo, bensì la mancanza di conoscenza specifica sul progetto (il codice già scritto, le librerie in uso, le convenzioni del team). Il **Context Engineering** consiste nell'ingegnerizzare attivamente questa base di conoscenza per ottimizzare l'output:
 
-  ```text
-  Usa esclusivamente il regolamento condominiale allegato sotto per rispondere alla domanda.
-  Se la risposta non è presente nel testo, rispondi rigorosamente con "Non ho informazioni sufficienti nel regolamento per rispondere". Non inventare nulla.
+- **Contesto Statico**: Regole stabili e persistenti (es. file di configurazione `AGENTS.md`, linee guida del progetto, documentazione architetturale).
+- **Contesto Dinamico**: Il recupero automatico e mirato delle sole porzioni di codice o informazioni necessarie per risolvere il sotto-compito corrente (ad esempio tramite sistemi RAG o strumenti di scansione del workspace).
 
-  Regolamento Condominiale:
-  [Testo del Regolamento con regole sugli animali]
-
-  Domanda: Posso tenere un cane di grossa taglia nel condominio?
-  ```
+In questo modo, se il Prompt Engineering indica al modello _come_ rispondere, il Context Engineering seleziona e organizza _su cosa_ deve rispondere, riducendo drasticamente le allucinazioni.
 
 ---
 
-## 🤖 2. Cos'è un Agente IA?
+## 📦 3. I Limiti del Contesto negli LLM ("Lost in the Middle")
+
+Sebbene i modelli di linguaggio moderni vantino finestre di contesto enormi (fino a milioni di token), la loro capacità reale di elaborare le informazioni decade all'aumentare dei dati inseriti.
+
+- **Position Bias (Lost in the Middle)**: Studi empirici hanno dimostrato che gli LLM tendono a ricordare con alta precisione le informazioni collocate **all'inizio** del prompt (istruzioni di sistema) e **alla fine** (le ultime frasi inserite), mentre tendono a ignorare o confondere le informazioni poste nel **mezzo** di un contesto molto lungo.
+- **Miglioramenti Continui**: I modelli moderni stanno riducendo questo gap, ma il limite fisico della densità informativa permane.
+- **Soluzione didattica**: Non caricare interi archivi inutilmente. Pratica il **Context Engineering dinamico**, fornendo all'agente solo i file e le informazioni strettamente necessari per il sotto-compito corrente.
+
+---
+
+## 🧪 4. Il Ruolo Fondamentale della Verifica
+
+La differenza principale tra un programmatore amatoriale e un ingegnere del software nell'era dell'IA risiede nella **verifica**.
+
+- **I Test deterministici**: Verificano che a parità di input, una determinata funzione produca lo stesso output (es. `somma(2, 3) == 5`).
+- **Le Valutazioni (Evals)**: Poiché gli LLM sono non-deterministici, le Evals verificano la qualità dell'output complessivo (es. _"L'agente ha seguito le linee guida di sicurezza?"_, _"Il codice generato contiene dipendenze allucinate?"_).
+
+> [!CAUTION]
+> Scrivere codice con l'IA senza avere una suite di test o un criterio di verifica rigoroso è puro **Vibe Coding ad alto rischio**. Lo sviluppatore deve scrivere i test _prima_ che l'agente scriva il codice applicativo.
+
+---
+
+## 🤖 5. Cos'è un Agente IA?
 
 Un **Agente IA** non è una semplice chat che attende passivamente un prompt per rispondere. È un sistema software autonomo che opera all'interno di un loop continuo:
 
@@ -149,46 +179,9 @@ Ogni agente moderno è costituito da 5 parti fondamentali:
 
 ---
 
-## ⚖️ 3. Lo Spettro dello Sviluppo con IA
-
-Lavorare con l'IA nella programmazione non è una scelta binaria (usarla o non usarla). Si tratta di uno **spettro operativo** definito dal livello di struttura e di verifica applicati:
-
-| Dimensione                      | Vibe Coding                                                                 | Sviluppo Assistito Strutturato                                                     | Agentic Engineering                                                                     |
-| :------------------------------ | :-------------------------------------------------------------------------- | :--------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------- |
-| **Specificazione dell'Intento** | Prompt rapidi e informali in linguaggio naturale.                           | Prompt dettagliati con regole, esempi e contesti circoscritti.                     | Specifiche formali, schemi di architettura e file di regole stabili (es. `AGENTS.md`).  |
-| **Verifica**                    | _"Sembra funzionare"_ (test a vista dell'interfaccia).                      | Test manuali mirati ed esecuzione controllata.                                     | Test suite automatizzate, pipeline CI/CD e validazioni programmate (Evals).             |
-| **Comprensione del Codice**     | Minima: lo sviluppatore spesso copia e incolla senza leggere il codice.     | Selettiva: analisi approfondita dei moduli critici modificati dall'IA.             | Architetturale: l'uomo presidia la logica di sistema, l'agente gestisce i dettagli.     |
-| **Gestione Errori**             | Copia e incolla dei messaggi di errore restituiti dall'IDE all'IA.          | Lo sviluppatore analizza il bug, individua la causa e guida l'IA nella correzione. | L'agente esegue i test, legge i log di errore e si corregge in autonomia nella sandbox. |
-| **Scopo Appropriato**           | Prototipi rapidi, script personali, hackathon, esplorazione.                | Nuove funzionalità all'interno di codebase già esistenti e stabili.                | Sistemi di produzione complessi, refactoring di massa, migrazioni stabili.              |
-| **Profilo di Rischio**          | **Alto**: codice instabile, potenziale debito tecnico e falle di sicurezza. | **Moderato**: presidiato da checkpoint decisionali umani.                          | **Basso**: ogni modifica è validata da test deterministici e di qualità.                |
-
----
-
-## 🧪 4. Il Ruolo Fondamentale della Verifica
-
-La differenza principale tra un programmatore amatoriale e un ingegnere del software nell'era dell'IA risiede nella **verifica**.
-
-- **I Test deterministici**: Verificano che a parità di input, una determinata funzione produca lo stesso output (es. `somma(2, 3) == 5`).
-- **Le Valutazioni (Evals)**: Poiché gli LLM sono non-deterministici, le Evals verificano la qualità dell'output complessivo (es. _"L'agente ha seguito le linee guida di sicurezza?"_, _"Il codice generato contiene dipendenze allucinate?"_).
-
-> [!CAUTION]
-> Scrivere codice con l'IA senza avere una suite di test o un criterio di verifica rigoroso è puro **Vibe Coding ad alto rischio**. Lo sviluppatore deve scrivere i test _prima_ che l'agente scriva il codice applicativo.
-
----
-
-## 📦 5. I Limiti del Contesto negli LLM ("Lost in the Middle")
-
-Sebbene i modelli di linguaggio moderni vantino finestre di contesto enormi (fino a milioni di token), la loro capacità reale di elaborare le informazioni decade all'aumentare dei dati inseriti.
-
-- **Position Bias (Lost in the Middle)**: Studi empirici hanno dimostrato che gli LLM tendono a ricordare con alta precisione le informazioni collocate **all'inizio** del prompt (istruzioni di sistema) e **alla fine** (le ultime frasi inserite), mentre tendono a ignorare o confondere le informazioni poste nel **mezzo** di un contesto molto lungo.
-- **Miglioramenti Continui**: I modelli moderni stanno riducendo questo gap, ma il limite fisico della densità informativa permane.
-- **Soluzione didattica**: Non caricare interi archivi inutilmente. Pratica il **Context Engineering dinamico**, fornendo all'agente solo i file e le informazioni strettamente necessari per il sotto-compito corrente.
-
----
-
 ## 🛠️ 6. Demo Google AI Studio & Prototipizzazione Rapida
 
-Ora metteremo in pratica i concetti di Prompting e Intent Specification usando **Google AI Studio**, l'ambiente di prototipazione ufficiale di Google per interagire con i modelli Gemini.
+Ora metteremo in pratica i concetti di Prompting e Intent Specification usando [Google AI Studio](https://aistudio.google.com/), l'ambiente di prototipazione ufficiale di Google per interagire con i modelli Gemini.
 
 ### I 5 Prompt in Italiano per gli Studenti
 
@@ -216,4 +209,4 @@ Utilizza i prompt seguenti all'interno della chat di AI Studio per vedere come G
 
 ---
 
-[« Ora 1: Neurone Biologico e Reti Neurali](01-neurone-biologico-reti-neurali.md) | **Ora 2: Spettro IA e Context Engineering** | [Ora 3: AI-Driven SDLC, Setup e Pratica](03-sdlc-ruoli-setup.md) » |
+[« Ora 1: Neurone Biologico e Reti Neurali](01-neurone-biologico-reti-neurali.md) | **Ora 2: Spettro IA e Context Engineering** | [Ora 3: AI-Driven SDLC e Setup](03-sdlc-ruoli-setup.md) » |

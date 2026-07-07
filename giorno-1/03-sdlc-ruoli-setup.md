@@ -1,10 +1,10 @@
-# Ora 3: AI-Driven SDLC, Setup Strumenti e Pratica
+# Ora 3: AI-Driven SDLC e Setup Strumenti
 
 ---
 
-## | [« Ora 2: Spettro IA e Context Engineering](02-vibe-coding-agentic-engineering.md) | **Ora 3: AI-Driven SDLC, Setup e Pratica** | [Esercizio Giorno 1: L'Agente Specializzato](04-compito-agente-specializzato.md) » |
+## | [« Ora 2: Spettro IA e Context Engineering](02-vibe-coding-agentic-engineering.md) | **Ora 3: AI-Driven SDLC e Setup** |
 
-In questa terza ora vedremo come l'Intelligenza Artificiale Generativa stia ridisegnando le fasi di sviluppo di un progetto software (SDLC), quali ruoli assume il programmatore, affronteremo il setup dell'ambiente di sviluppo e faremo la nostra prima esercitazione pratica di laboratorio.
+In questa terza ora vedremo come l'Intelligenza Artificiale Generativa stia ridisegnando le fasi di sviluppo di un progetto software (SDLC), quali ruoli assume il programmatore, affronteremo il setup dell'ambiente di sviluppo e faremo la nostra prima esercitazione di laboratorio.
 
 ---
 
@@ -93,6 +93,11 @@ Se non lo hai già fatto:
 - Scarica e installa **Google Antigravity IDE 2.0**.
 - **Il concetto di Harness**: Spiega agli studenti che questo IDE agisce come un **Harness** (imbracatura/supporto). L'IDE fornisce all'agente intelligente Gemini una sandbox protetta, l'accesso sicuro al file system del progetto, un terminale integrato e la possibilità di leggere i risultati dei test. L'agente non scrive codice "nel vuoto", ma agisce all'interno di questa struttura che lo guida e ne verifica le azioni.
 
+### C. Download e Installazione di Obsidian
+
+- Scarica e installa **[Obsidian](https://obsidian.md/)**.
+- **Il tuo Secondo Cervello (Second Brain)**: Obsidian è una potente applicazione per prendere appunti in formato Markdown. Nel corso la useremo come nostro archivio di note personali e per documentare le regole dei nostri agenti e della codebase (ad esempio il file `AGENTS.md` o i piani di sviluppo).
+
 ---
 
-[« Ora 2: Spettro IA e Context Engineering](02-vibe-coding-agentic-engineering.md) | **Ora 3: AI-Driven SDLC, Setup e Pratica**
+[« Ora 2: Spettro IA e Context Engineering](02-vibe-coding-agentic-engineering.md) | **Ora 3: AI-Driven SDLC e Setup**

@@ -16,8 +16,7 @@ Benvenuto nella prima giornata del corso! L'obiettivo di oggi è gettare basi so
   - Comprendere il concetto di _Context Engineering_ statico e dinamico, incluse le limitazioni fisiche del contesto (effetto "Lost in the Middle").
 - **Pratica e Strumenti**:
   - Progettare prompt in linguaggio naturale (Zero-shot, Few-shot, Chain of Thought, Context Engineering) in Google AI Studio.
-  - Installare Git e configurare **Google Antigravity IDE 2.0**.
-  - Svolgere l'esercizio pratico di creazione e pubblicazione su GitHub di un System Prompt strutturato.
+  - Installare Git, configurare **Google Antigravity IDE 2.0** e installare **Obsidian** come personal knowledge base.
 
 ---
 
@@ -26,18 +25,17 @@ La prima giornata è organizzata in tre moduli orari e un compito finale.
 ### 🧠 [Ora 1: Dal Neurone Biologico alle Reti Neurali (Teoria & Filosofia)](01-neurone-biologico-reti-neurali.md)
 
 - _Cosa imparerai_: Il parallelismo biologico della plasticità neuronale, la neurobiologia dell'apprendimento e della memoria, la confutazione del concetto di "pappagallo stocastico", l'intenzionalità umana e la transizione da sintassi a intento.
+- **Risorse Video**:
+  - [Come imparano le reti neurali](https://www.youtube.com/watch?v=MJlrabo6ARk)
+  - [Come funziona l'elaborazione del linguaggio naturale (NLP)](https://www.youtube.com/watch?v=hFyi2sSsm4E)
 
 ### 🔌 [Ora 2: Lo Spettro dell'IA e il Context Engineering (Prompting & Agenti)](02-vibe-coding-agentic-engineering.md)
 
-- _Cosa imparerai_: Tecniche di Prompt Engineering con esempi reali corretti ed errati, la struttura interna di un Agente IA, lo spettro dal Vibe Coding all'Agentic Engineering, la verifica con Evals e i limiti del contesto ("Lost in the Middle"). Prototipizzazione rapida con Google AI Studio.
+- _Cosa imparerai_: Tecniche di Prompt Engineering con esempi reali corretti ed errati, la struttura interna di un Agente IA, il concetto di contesto ed il Context Engineering con i relativi limiti fisici ("Lost in the Middle"), e la verifica dell'output. Prototipizzazione rapida con [Google AI Studio](https://aistudio.google.com/).
 
-### 💻 [Ora 3: AI-Driven SDLC, Setup Strumenti e Pratica (Ambiente & Laboratorio)](03-sdlc-ruoli-setup.md)
+### 💻 [Ora 3: AI-Driven SDLC e Setup Strumenti (Ambiente)](03-sdlc-ruoli-setup.md)
 
-- _Cosa imparerai_: Come l'IA trasforma il ciclo di vita del software, i ruoli di Conduttore vs Orchestratore, il problema dell'80/20, il setup di Git/GitHub, l'installazione di Google Antigravity IDE 2.0 e la prima clonazione del repository.
-
-### 📝 [Compito del Giorno 1: L'Agente Specializzato](04-compito-agente-specializzato.md)
-
-- _Cosa farai_: Un'attività di laboratorio autonoma in cui analizzerai un limite logico/allucinazione dell'IA e progetterai un System Prompt strutturato applicando le regole di Context Engineering, inviando il tutto su un repository GitHub personale.
+- _Cosa imparerai_: Come l'IA trasforma il ciclo di vita del software, i ruoli di Conduttore vs Orchestratore, il problema dell'80/20, il setup di Git/GitHub, l'installazione di Google Antigravity IDE 2.0, l'installazione di Obsidian come "secondo cervello" (Second Brain) e la prima clonazione del repository.
 
 ---
 

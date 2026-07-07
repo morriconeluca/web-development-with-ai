@@ -33,11 +33,15 @@ La dispensa è divisa in giornate didattiche indipendenti ma collegate. Puoi nav
 ### 🌟 [Giorno 1: Fondamenta dell'IA Generativa, Filosofia e Setup](giorno-1/README.md)
 
 - **Obiettivo**: Comprendere il funzionamento intimo dei modelli di linguaggio (oltre i pappagalli stocastici), la differenza tra Vibe Coding e Agentic Engineering, il ruolo del Context Engineering, la configurazione dell'ambiente con Google Antigravity IDE 2.0 e le prime prove pratiche in Google AI Studio.
+- **Risorse Consigliate**:
+  - [Come imparano le reti neurali](https://www.youtube.com/watch?v=MJlrabo6ARk)
+  - [Come funziona l'elaborazione del linguaggio naturale (NLP)](https://www.youtube.com/watch?v=hFyi2sSsm4E)
 - ➔ **[Accedi al Materiale del Giorno 1](giorno-1/README.md)**
 
-### ⏳ Giorno 2: [In arrivo]
+### 🌟 [Giorno 2: Documentazione e Sviluppo Assistito da Agent Skills e LLM Wiki](giorno-2/README.md)
 
-- [In arrivo]
+- **Obiettivo**: Approfondire la scrittura di file Markdown per la comunicazione uomo-macchina, esplorare le differenze tra RAG e il pattern cumulativo di un LLM Wiki (Second Brain) gestito in Obsidian, configurare e scrivere le prime Agent Skills (file `.md` con frontmatter) per guidare gli agenti in modo dichiarativo, e comprendere lo spettro dello sviluppo (Vibe Coding vs Agentic Engineering) insieme ai rischi correlati (AI Pitfalls e Resa Cognitiva).
+- ➔ **[Accedi al Materiale del Giorno 2](giorno-2/README.md)**
 
 ### 🌟 [Giorno 3: Architettura Web, Firebase e Sviluppo della UI](giorno-3/README.md)
 
